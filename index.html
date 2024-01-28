@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="tab">
+        <button onclick="showTabs('add')" class="tab-button">AddToDo</button>
+        <button onclick="showTabs('todoItems')"  class="tab-button"> ToDoItem</button>
+        
+    </div>
+
+
+
+    <div class="all">
+        
+        <div  id="add" class="hide body">
+            <h2 class="title">Add to do</h2>
+            <form action="" id="todoForm">
+    
+                <div class="label">
+                    <label>
+                        <p>Title</p>
+                        <input type="text" id="title" name="title" value=""  requires>
+                    </label>
+                </div>
+                <div class="label">
+                    <label class="label">
+                        <p>Description</p>
+                        <input type="text" id="description" name="description" value="" requires>
+                    </label>
+                </div>
+    
+                <button onclick="submitForm(event)"type="submit">add to list</button>
+    
+    
+            </form>
+        </div>
+
+    <div class="todoItems body" id="todoItems">
+        <button onclick="clearToDo()"  class="tab-button"> Clear</button>
+        <table id="myTable">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Created At</th>
+                <th id="complete" class="complete">Complete</th>
+              </tr>
+              
+        </table>
+       
+
+
+
+    </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+</html>

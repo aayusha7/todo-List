@@ -77,7 +77,7 @@ function addToDiv() {
 
     var todoItem = list[list.length-1];
     addToTable(todoItem, list.length)
-    count++;
+  
 
 }
 function addToTable(item, i) {
